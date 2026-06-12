@@ -4,4 +4,7 @@
     <Project Path="src/Tetris.CLI/Tetris.CLI.csproj" />
     <Project Path="src/Tetris.Core/Tetris.Core.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tetris.Core.Tests/Tetris.Core.Tests.csproj" />
+  </Folder>
 </Solution>

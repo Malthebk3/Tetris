@@ -1,0 +1,42 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Tetris.Avalonia.ViewModels"
+             Focusable="True" 
+             IsTabStop="True"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
+             x:Class="Tetris.Avalonia.Views.MainView"
+             x:DataType="vm:MainViewModel">
+
+    <Grid>
+    <Grid.ColumnDefinitions>
+    <!-- Auto = fits content; 220px = side panel width -->
+    <ColumnDefinition Width="Auto"/>
+    <ColumnDefinition Width="200"/>
+    </Grid.ColumnDefinitions>
+
+        <Canvas Grid.Column="0" x:Name="GameCanvas" 
+        Width="300" Height="600"
+        Background="#111111"
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center">
+        </Canvas>
+
+        <StackPanel Grid.Column="1" Margin="20" Spacing="15" VerticalAlignment="Center">
+        <TextBlock Text="TETRIS" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+        <TextBlock Text="Next Piece:" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left"/>
+        <Canvas x:Name="NextPieceCanvas" Background="#222" Width="150" Height="150" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="ScoreText" Text="{Binding Score, StringFormat='Score: {0}'}" FontSize="18" Foreground="White"/>
+        <TextBlock x:Name="LevelText" Text="{Binding Level, StringFormat='Level: {0}'}" FontSize="18" Foreground="White"/>
+        <TextBlock x:Name="LinesText" Text="{Binding Lines, StringFormat='Lines: {0}'}" FontSize="18" Foreground="White"/>
+        <TextBlock Padding="0,1,0,1">Controls:</TextBlock>
+        <TextBlock Padding="0,0,0,1">Left = ←</TextBlock>
+        <TextBlock Padding="0,0,0,1">Right = →</TextBlock>
+        <TextBlock Padding="0,0,0,1">Rotate = ↑</TextBlock>
+        <TextBlock Padding="0,0,0,1">Down = ↓</TextBlock>
+        <TextBlock Padding="0,0,0,1">Drop = Spacebar</TextBlock>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

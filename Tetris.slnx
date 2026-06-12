@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Tetris.Avalonia/Tetris.Avalonia.csproj" />
+    <Project Path="src/Tetris.CLI/Tetris.CLI.csproj" />
+    <Project Path="src/Tetris.Core/Tetris.Core.csproj" />
+  </Folder>
+</Solution>

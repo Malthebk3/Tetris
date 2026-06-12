@@ -1,0 +1,8 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Tetris.Avalonia.Views"
+        xmlns:views="clr-namespace:Tetris.Avalonia.Views"
+        x:Class="Tetris.Avalonia.Views.MainWindow"
+        Title="Tetris" Width="500" Height="600" Focusable="True">
+        <views:MainView />
+</Window>

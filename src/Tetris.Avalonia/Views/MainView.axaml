@@ -34,8 +34,8 @@
         <TextBlock Padding="0,0,0,1">Left = ←</TextBlock>
         <TextBlock Padding="0,0,0,1">Right = →</TextBlock>
         <TextBlock Padding="0,0,0,1">Rotate = ↑</TextBlock>
-        <TextBlock Padding="0,0,0,1">Down = ↓</TextBlock>
-        <TextBlock Padding="0,0,0,1">Drop = Spacebar</TextBlock>
+        <TextBlock Padding="0,0,0,1">Soft Drop = ↓</TextBlock>
+        <TextBlock Padding="0,0,0,1">Hard Drop = Spacebar</TextBlock>
         </StackPanel>
 
     </Grid>
